@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #ccc;
+    font-family: 'Courier New', monospace;
+}
+
+.head {
+    background: white;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: [_title]8fr [_timer-add-button]1fr;
+    text-align: center;
+    border-bottom: 2px solid #222;
+}
+
+.head header {
+    font-size: 30px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: [_content]20fr [_log]9fr;
+}
+
+.contents {
+    margin: 0 30px; 
+}
+.content {
+    grid-column: _content;
+    width: 420px;
+    background: #999;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 15px 5px;
+    display: inline-block
+}
+.content > * {
+    margin: 5px 15px;
+}
+
+#all-log {
+    grid-column: _log;
+    height: calc(100vh - 98px);
+    overflow-y: scroll;
+    background: #111;
+    padding: 10px 30px;
+}
+#all-log > pre {
+    font-size: 20px;
+    color: #eee;
+    padding: 5px 0;
+}
+
+.name-contents {
+    background: #eee;
+    display: grid;
+    grid-template-columns: 
+    [_name] 3fr 
+    [_name_change] 1fr;
+    padding: 10px 0px;
+}
+.name-contents > * {
+    height: 30px;
+    margin: 0px 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.name {
+    grid-column: _name;
+    text-align: start;
+    padding: 2px 0px;
+    font-size: 20px;
+}
+.name-input {
+    grid-column: _name;
+    text-align: start;
+    padding: 0px;
+    font-size: 20px;
+    align-self: center;
+}
+.name-change {
+    grid-column: name-change;
+    width: 80px;
+    line-height: normal;
+}
+
+.information-contents {
+    background: #111;
+    color: #fff;
+    height: 20px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 
+    [_mode] 1fr
+    [_message] 2fr;
+    font-size: 16px;
+}
+.mode-information {
+    grid-column: _mode;
+    justify-self: center;
+    align-self: center;
+}
+.message-console {
+    grid-column: _message;
+    justify-self: start;
+    align-self: center;
+}
+
+.timer {
+    background: rgb(105, 122, 6);
+    margin-top: 0px;
+    height: 80px;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 48px;
+}
+.timer-alarm {
+    background: red;
+}
+
+.controls {
+    padding: 5px 0px;
+    margin: 20px 15px 0px;
+}
+.top-controls > *,
+.bottom-controls > * {
+    display: inline-block;
+    width: 97.5px;
+    height: 30px;
+}
+.top-controls {
+    padding-bottom: 10px;
+}

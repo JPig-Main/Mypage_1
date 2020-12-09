@@ -1,0 +1,78 @@
+
+/* カレンダー */
+#calender-container {
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid #888;
+    color: #444;
+}
+#calender-container > thead,
+#calender-container > tfoot {
+    background: hsl(35, 70%, 75%);
+}
+#calender-container th,
+#calender-container td {
+    padding: 8px;
+    text-align: center;
+    height: 30px;
+}
+#calender-container > tbody td:first-child {
+    color: red;
+}
+#calender-container > tbody td:last-child {
+    color: blue;
+}
+#calender-container > tfoot {
+    font-weight: bold;
+}
+#calender-container td.disabled {
+    background: #ddd;
+}
+#calender-container > tbody td {
+    background: #eee
+}
+#calender-container td.today {
+    font-weight: bold;
+    font-size: 17px;
+}
+#calender-container #prev,
+#calender-container #next,
+#calender-container #today {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* 時計 */
+.world-clock-container {
+    background: #eee;
+    text-align: center;
+    padding: 20px 20px;
+    width: 78%;
+    border: 1px solid #888;
+}
+.world-clock-empty {
+    height: 20px;
+}
+#world-clock {
+    line-height: 120px;
+    background: #bbb;
+    border: 1px solid #666;
+    color: #444;
+    font-size: 40px;
+}
+#world-clock-place-choices {
+    padding: 10px;
+    margin: 0 10px;
+}
+#world-clock-place-choices > button {
+    display: inline-block;
+    height: 25px;
+    width: 120px;
+    margin: 3px;
+    border: 1px solid #666;
+}
+#world-clock-place-choices button.button-usable {
+    background: #ccc;
+    cursor: pointer;
+    user-select: none;
+}

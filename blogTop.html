@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog - JPig</title>
+    <!-- モバイルで対応した形 -->
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="Image/steep4_wh.ico" />
+    <link rel="stylesheet" href="Css/topStyle.css" />
+    <link rel="stylesheet" href="Css/asideContents.css" />
+  </head>
+
+  <body>
+    <div class="out-frame">
+      <section class="head-contents">
+        <a href="index.html" class="title"><header>JPig</header></a>
+
+        <nav class="top-menus">
+          <ul>
+            <li class="top-menu"><a href="index.html">Home</a></li>
+            <li class="top-menu"><a href="contents.html">Contents</a></li>
+            <li class="top-menu"><a href="blogTop.html">Blog</a></li>
+            <li class="top-menu"><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <h1 class="subtitle">Blog</h1>
+      <section class="body-contents">
+        <main>
+          <article>
+            <p>
+              　<a href="https://qiita.com/JPig">Qiita</a
+              >でブログを更新しています（まだ登録したばかりですが...）。
+            </p>
+          </article>
+        </main>
+
+        <aside>
+          <section class="aside-contents only-for-big-display">
+            <table id="calender-container">
+              <thead>
+                <tr>
+                  <th id="calender-prev">&laquo;</th>
+                  <th id="calender-title" colspan="5">2020/05</th>
+                  <th id="calender-next">&raquo;</th>
+                </tr>
+                <tr>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr>
+                  <td id="calender-today" colspan="7">Today</td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <div class="world-clock-container">
+              <div id="world-clock"></div>
+              <div class="world-clock-empty"></div>
+              <div id="world-clock-place-choices"></div>
+            </div>
+          </section>
+          <hr class="aside-branch only-for-big-display" />
+          <section class="catalog">
+            <article>
+              <h1>Profile</h1>
+
+              <section class="profile-detail">
+                <figure class="profile-icon">
+                  <img src="Image/minecraft_profile.jpg" alt="" />
+                </figure>
+
+                <p class="profile-sentence">
+                  高専生でパソコンをいじってます。 趣味はマイクラ<!-- 、乃木坂46など -->。
+                  詳しくは<a href="profile.html">こちら</a>をクリック。
+                </p>
+              </section>
+            </article>
+
+            <article>
+              <h1>Contents</h1>
+
+              <p>
+                　コンテンツは詳しくは<a href="contents.html">こちら</a
+                >をクリック。
+              </p>
+            </article>
+
+            <article>
+              <h1>Contact</h1>
+
+              <p>
+                　ご意見、ご質問などはTwitter（<a
+                  href="https://twitter.com/JPig_Main"
+                  target="_blank"
+                  >@JPig_Main</a
+                >）のDMへどうぞ。
+              </p>
+            </article>
+          </section>
+        </aside>
+      </section>
+
+      <footer>
+        <figure class="sns">
+          <section class="icons">
+            <figure class="icon">
+              <a href="https://twitter.com/JPig_Main" target="_blank">
+                <img
+                  src="Image/twitter_logo2.png"
+                  alt="twitter"
+                  title="twitter（@JPig_Main）"
+                />
+              </a>
+            </figure>
+
+            <figure class="icon">
+              <a href="https://github.com/JPig-Main" target="_blank">
+                <img
+                  src="Image/github_Icon.jpg"
+                  alt="GitHub"
+                  title="GitHub（JPig-Main）"
+                />
+              </a>
+            </figure>
+          </section>
+        </figure>
+        <div class="copyright">
+          Since 2020 Copyright© JPig All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+
+    <script></script>
+    <script src="Js/calender.js"></script>
+    <script src="Js/worldClock.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </body>
+</html>
