@@ -125,23 +125,7 @@
         'async',
         'this',
         'await',
-        'querySelector',
-        'getElementById',
-        'classList',
-        'id',
         'type',
-        'childrenNode',
-        'addEventListener',
-        'button',
-        'click',
-        'mousemove',
-        'key',
-        'keydown',
-        'textContent',
-        'style',
-        'add',
-        'remove',
-        'toggle',
 
     ];
     const words = [];
