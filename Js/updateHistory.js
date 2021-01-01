@@ -106,4 +106,14 @@
     },
     "プロフィールを変更しました."
   );
+
+  // 2021.1/2
+  addContent(
+    {
+      year: 2021,
+      month: 1,
+      date: 2,
+    },
+    "ContentsにCalculator-tsを追加しました."
+  );
 }
